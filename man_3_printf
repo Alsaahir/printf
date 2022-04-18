@@ -3,7 +3,7 @@
 .B _printf
 - Formatted output conversion.
 .SH SYNOPSIS
-.B #include "holberton.h"
+.B #include "main.h"
 
 .B int _printf(const char *
 .I format
@@ -51,7 +51,7 @@ Prints a string converted to rot13
 .B %
 A '%' is written but no argument is converted. The complete version specification is '%%'
 .SH EXAMPLE
-#include "holberton.h"
+#include "main.h"
 
 _printf("%s", "my name",);
 .SH SEE ALSO
