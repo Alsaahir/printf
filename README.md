@@ -5,7 +5,7 @@ A formatted output conversion C program completed . The program is a recreation 
 printf from scratch.
 * Prototype: `int _printf(const char *format, ...);`
 ## Usage
-To use the `_printf` 
+To use the `_printf
 compile all `.c` files in the repository and include the header `main.h` with any main function.
 
 Example `main.c`:
@@ -22,7 +22,7 @@ int main(void)
 
 Compilation:
 ```
-$ gcc *.c -o 
+$ gcc *.c -o
 ```
 
 Output:
@@ -34,7 +34,7 @@ $
 ### Return Value
 
 Upon Working successfully the `_printf` returns the number of characters printed
-(excluding the terminating null byte used to end output to strings). If an error is encountered, 
+(excluding the terminating null byte used to end output to strings). If an error is encountered,
 the function returns `-1`.
 #### Conversion Specifiers
 
@@ -95,7 +95,7 @@ A
 
 #### s
 The ` char *` argument  is a pointer to a character array or
-pointer to a string is printed starting from first element to the end `\0` 
+pointer to a string is printed starting from first element to the end `\0`
 excluding null byte
 
 Example
@@ -125,7 +125,7 @@ demhA
 ```
 
 #### R
- Convert the `char *` to Rot13 
+Convert the `char *` to Rot13
 Example:
 ```
     _printf("%R\n", "Hello, World");
@@ -166,7 +166,7 @@ Output:
 ## Other Features
 This function also Handle :
 * The flag characters for non-custom conversion specifiers (`+` `SPACE ` `#`)
-* The length modifiers for non-custom conversion(`d, i, u, o, x, X`) specifiers(`l` `h`) 
+* The length modifiers for non-custom conversion(`d, i, u, o, x, X`) specifiers(`l` `h`)
 ## Authors
 * JACOB MWALE JACOB <[Alsaahir](https://github.com/Alsaahir)>
 * YATE ASSEKE RONALD OLIVERA <[yateronald](https://github.com/yateronald)>
