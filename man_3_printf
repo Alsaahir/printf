@@ -1,11 +1,11 @@
 ./" PRINTF manpage
-.TH .B _PRINTF "March 17th, 2020" "V0.1" "_PRINTF MAN PAGE"
+.TH .B _PRINTF "ARIL 19th, 2022" "V0.1" "_PRINTF MAN PAGE"
 
 .SH NAME
 PRINTF
 
 .SH SYNOPSIS
-#include "holberton.h"
+#include "main.h"
 _printf(const char *format, ...);
 
 .SH EXAMPLE
@@ -17,8 +17,8 @@ This printf function requires the header file "holberton.h" to work.
 
 .SH DESCRIPTION
 This printf function is a custom program created by
-two students at Holberton School, Usman.A.Jabbar 
-and J.I Cruz as a part of the Holberton School
+two students at alx School, Yate ronald 
+and  Jacob Mwale as a part of the Alx School
 curriculum.
 
 This _printf function uses performs most of the basic
