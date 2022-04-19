@@ -26,6 +26,7 @@ typedef struct modifier
 	char specifier;
 } modifier_t;
 
+int _printf(const char *format, ...);
 void *_realloc(void *ptr, unsigned int, unsigned int);
 int _putchar(char c);
 char *print_binary(modifier_t *, va_list);
