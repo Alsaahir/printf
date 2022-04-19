@@ -1,62 +1,52 @@
-.TH man 3 "27 October 2020" "0.20" "_printf man page"
+./" PRINTF manpage
+.TH .B _PRINTF "March 17th, 2020" "V0.1" "_PRINTF MAN PAGE"
+
 .SH NAME
-.B _printf
-- Formatted output conversion.
+PRINTF
+
 .SH SYNOPSIS
-.B #include "holberton.h"
-
-.B int _printf(const char *
-.I format
-.B , ...)
-.SH DESCRIPTION
-.B _printf()
-Prints to standard output under the control of a 
-.I format
-.SH Return value
-On successful return, these functions return the number of characters printed, excluding the null byte used to end output to strings.
-
-If an output error is encountered, a negative value is returned.
-.SH Format
-.TP
-.BR c
-The int argument is converted to an unsigned char, then the resulting character is written
-.TP
-.B s
-The const char * argument is expected to be a pointer to an array of character type (pointer to a string). Characters from the array are written up to a terminating null byte, but do ot include the terminating null byte.
-.TP
-.B S
-Prints a string. Non printable characters are printed as "\x" followed by their ASCII values in two digit hexadecimal
-.TP
-.B d, i
-The int argument is converted to signed decimal notation.
-.TP
-.B x, X
-The unsigned int argument is converted to unsigned lowercase hexadecimal notation(x), or unsigned uppercase hexadecimal notation(X).
-.TP
-.B u
-The unsigned int argument is converted to unsigned decimal notation
-.TP
-.B o, b
-The unsigned int argument is converted to unsigned octal notation(o) or binary notation(b).
-.TP
-.B p
-Address is printed in hexadecimal.
-.TP
-.B r
-Prints a string in reverse.
-.TP
-.B R
-Prints a string converted to rot13
-.TP
-.B %
-A '%' is written but no argument is converted. The complete version specification is '%%'
-.SH EXAMPLE
 #include "holberton.h"
+_printf(const char *format, ...);
 
-_printf("%s", "my name",);
-.SH SEE ALSO
-.I printf(3)
+.SH EXAMPLE
+.B _printf("There are %d degrees in a circle", angle)
+.I Where angle is a variable that contains 360 as an int value
+
+.SH NOTE
+This printf function requires the header file "holberton.h" to work.
+
+.SH DESCRIPTION
+This printf function is a custom program created by
+two students at Holberton School, Usman.A.Jabbar 
+and J.I Cruz as a part of the Holberton School
+curriculum.
+
+This _printf function uses performs most of the basic
+tasks of the original printf functions and can accept
+a number of format specifiers [see OPTIONS].
+
+.SH OPTIONS
+The following are the format specifiers that our
+printf function accepts and parses.
+
+.IP %s
+ - Parses and prints out strings.
+
+.IP %d
+ - Parses and prints out decimals.
+
+.IP %i
+ - Parses and prints out integers.
+
+.IP %r
+ - Parses and prints out reversed strings.
+
+.IP %R
+ - Parses and prints out strings in ROT13 format.
+
 .SH BUGS
-No known bugs.
+Only the checker can tell, we're just mere human beings.
+If the there are any errors, blame Jose! I didn't do it!
+
 .SH AUTHOR
-Ahmed Belhaj,Wael Ben Hassen
+Yate Asseke Ronald | Jacob Mwale Jacob
